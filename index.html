@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="main">
+        <h1 id="title">
+            Behavioral Survey
+        </h1>
+        <p id="description">
+            This is a survey to collect insights on IT Employees.
+        </p>
+        <form id="survey-form">
+            <label id="name-label">Full Name</label>
+                <input type="text" name="name" id="name" placeholder="Enter your name" required> <br>
+            <label id="email-label">Email</label>
+                <input type="email" name="email" id="email" placeholder="Enter email" required> <br>
+            <label id="number-label">Age</label>
+                <input type="number" name="age" id="number" placeholder="Enter age" min="18" max="60"><br>
+            <label for="role">Job Role</label>
+                <select name="role" id="dropdown">
+                    <option disabled selected value> -- select an option -- </option>
+                    <option value="FrontEnd">Front End Developer</option>
+                    <option value="BackEnd">Back End Developer</option>
+                    <option value="FullStck">Full Stack Developer</option>
+                    <option value="QA">Software Tester</option>
+                    <option value="Database">Database Admin</option>
+                    <option value="Devops">Devops Engineer</option>
+                    <option value="BA">Business Analyst</option>
+                </select>
+            <p>Please select your salary range</p>
+                <input type="radio" name="salary-range" value="basic" checked> 10K-15K &nbsp;&nbsp;
+                <input type="radio" name="salary-range" value="associate"> 15K-50K &nbsp;&nbsp;
+                <input type="radio" name="salary-range" value="senior"> 50K-150K &nbsp;&nbsp;
+            <p>You Have Assisted In</p>
+            <input type="checkbox" id="local" name="local" value="local">
+            <label for="vehicle1"> Local Projects</label><br>
+            <input type="checkbox" id="foreign" name="foreign" value="foreign">
+            <label for="vehicle2"> Foreign Projects</label><br>
+            <input type="checkbox" id="r&d" name="r&d" value="r&d">
+            <label for="vehicle3"> Research and Development</label><br>
+
+            <p>Please describe about you skill expertise</p>
+            <textarea id="additonal-comments" rows="10" cols="35">    
+            </textarea> <br>
+            <input type="submit" id="submit" value="submit" name="submit"> 
+        </form>
+    </div>
+</body>
+</html>

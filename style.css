@@ -1,0 +1,27 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+
+#main{
+    text-align: center;
+    margin: 90px 50px;
+    border: 2px red solid;
+}
+
+#title{
+    color: red;
+}
+
+#description{
+    margin-top: -20px;
+    color: red;
+}
+
+#survey-form{
+    display: inline-block;
+    background-color: white;
+    position: relative;
+    height: auto;
+    width: 95%;
+}
